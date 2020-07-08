@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Success";
+    var account = ViewBag.Account as List<Account>;
+}
+
+@if (account != null)
+{
+    <h1>Success</h1>
+    @foreach (var item in account)
+    {
+        <p>@item.username</p>
+        <p>@item.password</p>
+    }
+}
+
+
